@@ -1,0 +1,8 @@
+# No automated remediation is possible for this vulnerability.
+# The vulnerability exists in the django.utils.archive.extract() function.
+# Mitigation steps:
+# 1. Upgrade Django to version 4.2.25, 5.1.13, 5.2.7, or later.
+# 2. If upgrading is not immediately possible, carefully review and sanitize any archives used with the "startapp --template" and "startproject --template" commands.
+# 3. Avoid using untrusted archives with these commands.
+
+echo "Please upgrade Django to a patched version or sanitize archives used with startapp/startproject commands."
