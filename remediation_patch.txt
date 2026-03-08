@@ -1,0 +1,11 @@
+# This script updates Django to the latest version to address the identified vulnerability.
+# It assumes that pip is used for package management.
+
+# Update pip
+pip install --upgrade pip
+
+# Upgrade Django to the latest version
+pip install --upgrade Django
+
+# Verify the Django version
+django-admin --version
