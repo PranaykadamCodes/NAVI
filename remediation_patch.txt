@@ -1,0 +1,5 @@
+# No automated remediation available for this vulnerability.
+# Mitigation steps:
+# 1. Upgrade Django to version 6.0.2, 5.2.11, or 4.2.28 or later.
+# 2. Review and sanitize any user-supplied input used in QuerySet.order_by() calls, especially column aliases.
+# 3. Be cautious when using FilteredRelation with dictionary expansion and user-controlled data.
