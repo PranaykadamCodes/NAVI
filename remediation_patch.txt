@@ -1,0 +1,22 @@
+# This script assumes you are using pip to manage Django.
+# It updates Django to the latest patched version.
+# Replace 'your_django_env' with the name of your virtual environment if applicable.
+
+set -e
+
+# Check if virtual environment is activated
+if [ -z "$VIRTUAL_ENV" ]; then
+  echo "Virtual environment not activated.  Activate it first (e.g., source your_django_env/bin/activate)"
+  exit 1
+fi
+
+# Upgrade pip
+pip install --upgrade pip
+
+# Upgrade Django to the latest version within the supported series
+pip install --upgrade Django
+
+# Verify the Django version
+django-admin --version
+
+echo "Django has been updated. Please restart your Django application."
