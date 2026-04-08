@@ -1,0 +1,7 @@
+# No direct remediation script available for this vulnerability.
+# Mitigation steps involve upgrading Django to a patched version.
+# Please refer to the Django project's documentation for upgrade instructions.
+# Example command to upgrade Django (if using pip):
+# pip install --upgrade django==6.0.3
+# Or, if using a requirements.txt file, update the Django version and run:
+# pip install -r requirements.txt
